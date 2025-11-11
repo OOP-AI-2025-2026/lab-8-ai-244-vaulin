@@ -36,7 +36,7 @@ jobs:
 
       # 1) Compilation
       - name: Compile (skip tests)
-        run:
+        run: |
           cd app
           mvn -B -ntp -DskipTests=true clean package
 
