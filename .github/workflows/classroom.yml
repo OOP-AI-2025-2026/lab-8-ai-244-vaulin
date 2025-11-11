@@ -36,7 +36,9 @@ jobs:
 
       # 1) Compilation
       - name: Compile (skip tests)
-        run: mvn -B -ntp -DskipTests=true clean package
+        run:
+          cd app
+          mvn -B -ntp -DskipTests=true clean package
 
       # 2) Unit tests
       - name: Run Unit Tests
