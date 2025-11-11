@@ -45,7 +45,6 @@ jobs:
       # 2) Unit tests
       - name: Run Unit Tests
         run: |
-          cd app
           mvn -B -ntp test
 
       # 3) Checkstyle
